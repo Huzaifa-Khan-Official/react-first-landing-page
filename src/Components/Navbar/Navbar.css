@@ -1,0 +1,17 @@
+.navbar-brand img {
+    margin: 0 10px;
+    width: 20px;
+}
+
+.navbarDiv {
+    display: flex;
+}
+
+.themeChangeDiv img {
+    width: 20px;
+}
+
+.themeChangeDiv img:hover {
+    cursor: pointer;
+}
+
