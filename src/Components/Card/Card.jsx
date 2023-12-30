@@ -3,7 +3,7 @@ import "./Card.css";
 
 export default function Card({ heading, paragraph, imgSrc }) {
     return (
-        <div className="card col-md-3 col-sm-12 col-12">
+        <div className="card col-md-3 col-sm-5 col-12 text-bg-dark">
             <img src={imgSrc} alt="" srcset="" />
             <div className="card-body">
                 <h5 className="card-title">{heading}</h5>

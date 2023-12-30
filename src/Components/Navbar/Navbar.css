@@ -24,6 +24,6 @@
     background-color: #8080808c;
 }
 
-.themeChangeDiv.clicked {
-    background-color: #0000008c;
+.themeChangeDiv.clicked  i{
+    color: white;
 }

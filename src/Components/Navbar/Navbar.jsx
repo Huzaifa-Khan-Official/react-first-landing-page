@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import dinosaur from '../../dinosaur.png';
-import imgSun from '../../imgSun.png';
 
 export default function Navbar() {
-  const [isSunClicked, setIsSunClicked] = useState(false);
+  const [isMoonClicked, setisMoonClicked] = useState(false);
 
   const handleSunClick = () => {
-    setIsSunClicked(!isSunClicked);
+    setisMoonClicked(!isMoonClicked);
   };
 
   return (
     <div>
-      <nav className={`navbar navbar-expand-lg ${isSunClicked ? 'bg-sun-clicked' : 'bg-body-tertiary'}`}>
+      <nav className={`navbar navbar-expand-sm bg-body-tertiary`} data-bs-theme={`${isMoonClicked ? 'dark' : ''}`}>
         <div className="container-fluid">
           <div className="navbarDiv">
             <a className="navbar-brand" href="#">
@@ -45,8 +44,8 @@ export default function Navbar() {
               </ul>
             </div>
           </div>
-          <div className={`themeChangeDiv ${isSunClicked ? 'clicked' : ''}`} onClick={handleSunClick}>
-            <img src={imgSun} alt="" />
+          <div className={`themeChangeDiv ${isMoonClicked ? 'clicked' : ''}`} onClick={handleSunClick}>
+            <i class="fa-solid fa-moon"></i>
           </div>
         </div>
       </nav>

@@ -1,8 +1,32 @@
 .card {
     margin: 50px 0;
+    padding: 10px 5px;
+}
+
+.card.text-bg-dark {
+    border-color: white;
 }
 
 .row {
     justify-content: space-around;
-    margin: 20px 0;
+    width: 104%;
+    /* margin: 20px 0; */
+}
+
+.sunClicked {
+    background-color: #8080808c;
+    /* Add the desired background color here */
+}
+
+@media (max-width: 767px) {
+    .row {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 300px) {
+    .row {
+        padding: 0 20px;
+        padding-left: 30px;
+    }
 }
