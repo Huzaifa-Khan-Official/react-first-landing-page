@@ -7,6 +7,11 @@
     display: flex;
 }
 
+.themeChangeDiv {
+    padding: 10px;
+    border-radius: 50%;
+}
+
 .themeChangeDiv img {
     width: 20px;
 }
@@ -15,3 +20,10 @@
     cursor: pointer;
 }
 
+.themeChangeDiv:hover {
+    background-color: #8080808c;
+}
+
+.themeChangeDiv.clicked {
+    background-color: #0000008c;
+}
