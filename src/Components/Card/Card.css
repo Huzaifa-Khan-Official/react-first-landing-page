@@ -9,14 +9,11 @@
 
 .row {
     justify-content: space-around;
-    width: 104%;
-    /* margin: 20px 0; */
+    width: 100%;
+    padding-left: 10px;
 }
 
-.sunClicked {
-    background-color: #8080808c;
-    /* Add the desired background color here */
-}
+/* rgb(33,37,41) */
 
 @media (max-width: 767px) {
     .row {

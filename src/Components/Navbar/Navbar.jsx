@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import dinosaur from '../../dinosaur.png';
 
-export default function Navbar() {
-  const [isMoonClicked, setisMoonClicked] = useState(false);
+export default function Navbar({isMoonClicked, setisMoonClicked}) {
 
   const handleSunClick = () => {
     setisMoonClicked(!isMoonClicked);
